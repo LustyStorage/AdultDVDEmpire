@@ -28,7 +28,9 @@ jobs:
       # Runs a single command using the runners shell
       - name: PIP Install
         run: |
-          sudo snap install chromium
+          wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+          dpkg -i google-chrome-stable_current_amd64.deb
+          sudo apt -f install
           pip install selenium
           pip install webdriver_manager
           pip install pymongo
