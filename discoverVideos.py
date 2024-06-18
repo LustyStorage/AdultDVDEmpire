@@ -20,8 +20,8 @@ base_url = "https://www.adultdvdempire.com/trending-porn-videos.html?unlimited=0
 # List to store all movie details
 all_movie_details = []
 
-# Iterate through pages 1 to 100 done...
-for page in range(1, 6277):
+# Iterate through pages 1 to 6277
+for page in range(1, 3000):
     url = base_url.format(page)
     driver.get(url)
     
