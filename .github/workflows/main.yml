@@ -28,7 +28,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: PIP Install
         run: |
-          snap install chromium
+          sudo snap install chromium
           pip install selenium
           pip install webdriver_manager
           pip install pymongo
